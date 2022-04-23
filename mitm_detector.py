@@ -58,7 +58,7 @@ def display_notification(msg: str, title='Information') -> None:
         from pync import notify
         try:
             while True:
-                notify('Please check your internet connection')
+                notify(msg)
                 sleep(5)
 
         except:
